@@ -2,24 +2,24 @@ function DadosPessoaisForm() {
   return (
     <div className="container container-md my-5">
       <div className="mb-3">
-        <label htmlFor="formNomeInput" className="form-label">
+        <label htmlFor="Nome" className="form-label">
           Nome
         </label>
         <input
           type="text"
           className="form-control"
-          id="formNomeInput"
+          id="Nome"
           placeholder="Digite seu nome..."
         />
       </div>
       <div className="mb-3">
-        <label htmlFor="formEmailInput" className="form-label">
+        <label htmlFor="Email" className="form-label">
           E-mail
         </label>
         <input
           type="email"
           className="form-control"
-          id="formEmailInput"
+          id="Email"
           placeholder="Digite seu e-mail..."
         />
       </div>
