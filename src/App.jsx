@@ -27,10 +27,9 @@ function App() {
           plataforma
         </p>
       </header>
-      <form>
+      <div className="mx-5 mb-5 shadow bg-secondary-subtle border border-secondary-subtle rounded-3">
         <Passos passo={passoAtual} />
         <Forms passo={passoAtual} />
-
         {/* ------------------------------------------------------------ */}
         <div className="container container-sm text-center">
           <div className="btn">
@@ -40,7 +39,7 @@ function App() {
                 passoAtual > 0 ? mudarPasso(passoAtual - 1) : '';
               }}
               disabled={passoAtual === 0}
-              className="btn btn-outline-primary mx-1"
+              className="btn btn-outline-primary mx-1 mb-2"
             >
               <BsFillCaretLeftFill />
               Voltar
@@ -50,7 +49,7 @@ function App() {
               onClick={() => {
                 passoAtual < 3 ? mudarPasso(passoAtual + 1) : '';
               }}
-              className="btn btn-outline-primary mx-1"
+              className="btn btn-outline-primary mx-1 mb-2"
             >
               {passoAtual === 2 ? 'Enviar ' : 'Avançar '}
               {passoAtual === 2 ? (
@@ -61,7 +60,7 @@ function App() {
             </button>
           </div>
         </div>
-      </form>
+      </div>
     </div>
   );
 }
