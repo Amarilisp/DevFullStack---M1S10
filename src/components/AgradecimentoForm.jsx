@@ -1,6 +1,6 @@
 function AgradecimentoForm() {
   return (
-    <div className="container container-sm my-5">
+    <div className="container container- my-5">
       <div className="mb-3">
         <h1> Obrigado pelo seu cadastro!</h1>
         <h3>Conte-nos: onde nos conheceu?</h3>
